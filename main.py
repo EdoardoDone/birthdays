@@ -4,12 +4,9 @@ import sys
 from mypackage.birthdays import return_birthday
 
 if len(sys.argv) == 3:
-    first_name = str(sys.argv[1])
-    last_name = str(sys.argv[2])
-    user_input = first_name + ' ' + last_name
+    user_input = sys.argv[1] + " " + sys.argv[2]
 else:
-    print("Enter a valid name")
+    print("Enter: name username")
     exit()
-
 
 return_birthday(user_input)
